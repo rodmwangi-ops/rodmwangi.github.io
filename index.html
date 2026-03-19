@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rod Parsley Mwangi</title>
+<meta name="description" content="Policy research, gender and inclusion, governance, and 2.6 acres in Kajiado.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#FBF8F1;--parchment:#F5F0E6;--sand:#EDE6D6;--dust:#DDD5C4;--soil:#3A3226;--earth:#8B6F47;--earth-dark:#6B5535;--earth-light:#BFA87A;--amber:#C4955C;--shoot:#4A6741;--shoot-light:#6B8F5E;--leaf:#3D5A35;--vine:#5C7A52;--text:#3A3226;--text-muted:#706658;--text-light:#9A8E7A;--white:#FFFFFF}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',-apple-system,sans-serif;background-color:var(--cream);background-image:radial-gradient(circle,#C9BFA8 .6px,transparent .6px);background-size:24px 24px;color:var(--text);line-height:1.75;font-size:16px;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+h1,h2,h3,.serif{font-family:'Cormorant Garamond',Georgia,serif}
+a{color:inherit;text-decoration:none}img{max-width:100%;height:auto;display:block}
+.paper-grain{position:relative}.paper-grain::after{content:'';position:absolute;inset:0;border-radius:inherit;opacity:.3;pointer-events:none;mix-blend-mode:multiply;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.7' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='0.14'/%3E%3C/svg%3E");background-size:200px 200px;z-index:0}
+.vine-left,.vine-right{position:fixed;top:0;width:80px;height:100vh;pointer-events:none;z-index:0}.vine-left{left:0}.vine-right{right:0;transform:scaleX(-1)}
+.section-leaf{position:absolute;pointer-events:none;z-index:0}
+@keyframes sway{0%,100%{transform:rotate(0)}33%{transform:rotate(3deg)}66%{transform:rotate(-2deg)}}
+@keyframes swayR{0%,100%{transform:rotate(0)}33%{transform:rotate(-4deg)}66%{transform:rotate(2deg)}}
+@keyframes drift{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-6px) rotate(1.5deg)}}
+.anim-sway{animation:sway 7s ease-in-out infinite}.anim-sway-slow{animation:sway 11s ease-in-out infinite}.anim-swayR{animation:swayR 8s ease-in-out infinite}.anim-drift{animation:drift 9s ease-in-out infinite}
+nav{position:fixed;top:0;width:100%;z-index:100;padding:1rem 2rem;display:flex;justify-content:space-between;align-items:center;background:rgba(251,248,241,.88);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid transparent;transition:border-color .4s}
+nav.scrolled{border-bottom-color:var(--dust)}
+.nav-name{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:600;color:var(--text)}
+.nav-links{display:flex;gap:1.8rem;list-style:none}
+.nav-links a{font-size:.72rem;text-transform:uppercase;letter-spacing:.13em;color:var(--text-muted);font-weight:500;transition:color .3s;position:relative}
+.nav-links a::after{content:'';position:absolute;bottom:-3px;left:0;width:0;height:1px;background:var(--shoot);transition:width .3s}
+.nav-links a:hover{color:var(--shoot)}.nav-links a:hover::after{width:100%}
+.nav-toggle{display:none;background:none;border:none;cursor:pointer;padding:4px}.nav-toggle span{display:block;width:20px;height:1.5px;background:var(--text);margin:5px 0}
+.hero{position:relative;padding:9rem 2rem 5rem;max-width:1100px;margin:0 auto;min-height:88vh;display:flex;align-items:center}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:3.5rem;align-items:center;width:100%}
+.hero-text h1{font-size:clamp(2.4rem,4.5vw,3.5rem);font-weight:400;line-height:1.14;letter-spacing:-.02em;margin-bottom:1.4rem;color:var(--soil)}
+.hero-text h1 em{font-style:italic;color:var(--shoot);font-weight:500}
+.hero-tagline{font-size:1rem;color:var(--text-muted);line-height:1.8;max-width:470px;margin-bottom:2rem;font-weight:300}
+.hero-cta{display:flex;gap:1rem;flex-wrap:wrap}
+.hero-photos{display:flex;gap:1rem}
+.hero-img{flex:1;overflow:hidden;box-shadow:2px 4px 18px rgba(58,50,38,.1);border:1px solid rgba(58,50,38,.06)}
+.hero-img img{width:100%;height:320px;object-fit:cover}
+.hero-img-caption{background:var(--white);padding:.5rem .8rem;font-size:.7rem;color:var(--text-light);font-style:italic}
+.btn{display:inline-block;padding:.72rem 1.6rem;font-size:.72rem;font-weight:600;text-transform:uppercase;letter-spacing:.11em;border-radius:2px;transition:all .3s;font-family:'DM Sans',sans-serif;cursor:pointer}
+.btn-green{background:var(--shoot);color:#fff;border:1.5px solid var(--shoot)}.btn-green:hover{background:var(--shoot-light);border-color:var(--shoot-light)}
+.btn-outline{background:transparent;color:var(--text);border:1.5px solid var(--dust)}.btn-outline:hover{border-color:var(--shoot);color:var(--shoot)}
+.btn-earth{background:var(--earth);color:#fff;border:1.5px solid var(--earth)}.btn-earth:hover{background:var(--earth-dark);border-color:var(--earth-dark)}
+section{padding:5rem 2rem;position:relative}
+.section-inner{max-width:1100px;margin:0 auto;position:relative;z-index:2}
+.section-label{font-size:.63rem;text-transform:uppercase;letter-spacing:.22em;font-weight:600;margin-bottom:.5rem}
+.label-green{color:var(--shoot)}.label-earth{color:var(--earth)}
+.section-heading{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3vw,2.5rem);font-weight:400;letter-spacing:-.02em;line-height:1.2;margin-bottom:2.5rem}
+.bg-sand{background:var(--sand);background-image:none}
+.about-early{padding:4rem 2rem 5rem;background:var(--parchment);background-image:none;position:relative}
+.about-early-inner{max-width:780px;margin:0 auto;position:relative;z-index:2}
+.about-early-text{font-family:'Cormorant Garamond',serif;font-size:clamp(1.25rem,2.2vw,1.65rem);font-weight:400;line-height:1.7;color:var(--text)}
+.about-early-text .hl{color:var(--shoot);font-weight:500}
+.work-grid{display:grid;gap:2rem}
+.work-pair{display:grid;grid-template-columns:1fr 1fr;gap:2rem}
+.work-card{background:var(--white);border:1px solid rgba(58,50,38,.08);padding:2.2rem 2.4rem;box-shadow:2px 3px 14px rgba(58,50,38,.05);transition:transform .3s,box-shadow .3s;position:relative}
+.work-card:hover{transform:translateY(-3px);box-shadow:3px 6px 24px rgba(58,50,38,.09)}
+.work-featured{display:grid;grid-template-columns:1fr 1fr;gap:0;overflow:hidden;background:var(--white);border:1px solid rgba(58,50,38,.08);box-shadow:2px 4px 16px rgba(58,50,38,.06);transition:box-shadow .3s}
+.work-featured:hover{box-shadow:3px 6px 24px rgba(58,50,38,.1)}
+.work-featured-img{min-height:300px;background-size:cover;background-position:center}
+.work-featured-text{padding:2.5rem 2.8rem;display:flex;flex-direction:column;justify-content:center;position:relative;z-index:1}
+.work-type{font-size:.6rem;text-transform:uppercase;letter-spacing:.2em;font-weight:600;margin-bottom:.6rem}
+.type-green{color:var(--shoot)}.type-earth{color:var(--earth)}
+.work-card h3,.work-featured-text h3{font-family:'Cormorant Garamond',serif;font-size:1.28rem;font-weight:500;margin-bottom:.6rem;line-height:1.3}
+.work-card p,.work-featured-text p{color:var(--text-muted);font-size:.86rem;line-height:1.75;font-weight:300;margin-bottom:1rem}
+.work-link{font-size:.73rem;font-weight:500;display:inline-flex;align-items:center;gap:.4rem;margin-bottom:.75rem;transition:color .3s}.work-link:hover{text-decoration:underline}
+.link-green{color:var(--shoot)}.link-earth{color:var(--earth)}
+.work-tags{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:auto}
+.tag{font-size:.6rem;padding:.2rem .6rem;font-weight:500;border-radius:2px}
+.tag-green{background:rgba(74,103,65,.1);color:var(--shoot)}.tag-earth{background:rgba(139,111,71,.1);color:var(--earth)}
+.photo-strip{padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:3px;background:var(--earth-dark)}.photo-strip img{width:100%;height:250px;object-fit:cover}
+.media-section{background:var(--soil);color:var(--cream);background-image:none}.media-section .section-heading{color:var(--cream)}
+.media-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.media-card{overflow:hidden;transition:transform .3s}.media-card:hover{transform:translateY(-3px)}.media-card a{text-decoration:none;color:inherit;display:block}
+.media-thumb{width:100%;aspect-ratio:16/9;background:#1A1510;position:relative;overflow:hidden}.media-thumb img{width:100%;height:100%;object-fit:cover;opacity:.75;transition:opacity .3s}.media-card:hover .media-thumb img{opacity:1}
+.play-btn{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:46px;height:46px;background:var(--earth);border-radius:50%;display:flex;align-items:center;justify-content:center}.play-btn svg{width:14px;height:14px;fill:#fff;margin-left:2px}
+.media-info{padding:1.2rem 0}.media-info h4{font-family:'Cormorant Garamond',serif;font-size:1.02rem;font-weight:500;margin-bottom:.2rem}.media-info p{font-size:.72rem;color:var(--text-light)}
+.edu-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem}
+.edu-card{background:var(--white);border:1px solid rgba(58,50,38,.08);padding:1.8rem 2rem;box-shadow:1px 2px 10px rgba(58,50,38,.04)}
+.edu-card .degree{font-family:'Cormorant Garamond',serif;font-size:1.12rem;font-weight:500;margin-bottom:.3rem;line-height:1.3}.edu-card .school{font-size:.84rem;color:var(--shoot);font-weight:500;margin-bottom:.2rem}.edu-card .details{font-size:.79rem;color:var(--text-muted);font-weight:300}
+.edu-upcoming{border-left:3px solid var(--shoot)}.edu-badge{display:inline-block;font-size:.6rem;text-transform:uppercase;letter-spacing:.15em;background:var(--shoot);color:#fff;padding:.2rem .6rem;border-radius:2px;margin-bottom:.6rem;font-weight:600}
+.cert-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:2rem}
+.cert-card{background:var(--white);border:1px solid rgba(58,50,38,.08);overflow:hidden;box-shadow:2px 3px 14px rgba(58,50,38,.05)}
+.cert-img{width:100%;aspect-ratio:16/10;overflow:hidden;background:var(--sand);border-bottom:1px solid var(--dust)}.cert-img img{width:100%;height:100%;object-fit:contain;padding:.5rem}
+.cert-text{padding:1.2rem 1.5rem}.cert-text h4{font-family:'Cormorant Garamond',serif;font-size:1rem;font-weight:500;margin-bottom:.2rem}.cert-text p{font-size:.76rem;color:var(--text-muted);font-weight:300}
+.community-bar{padding:3rem 2rem;background:var(--sand);background-image:none}
+.community-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;gap:2rem}
+.community-icon{width:50px;height:50px;background:rgba(139,111,71,.1);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0}.community-icon svg{width:22px;height:22px;stroke:var(--earth);fill:none;stroke-width:1.8}
+.community-text h4{font-family:'Cormorant Garamond',serif;font-size:1.02rem;font-weight:500;margin-bottom:.2rem}.community-text p{font-size:.84rem;color:var(--text-muted);font-weight:300;line-height:1.7}
+.writing-section{background:var(--soil);color:var(--cream);background-image:none}.writing-section .section-heading{color:var(--cream)}
+.writing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-bottom:2.5rem}
+.wp-card{border:1px solid rgba(255,255,255,.06);padding:2rem;transition:all .3s}.wp-card:hover{border-color:var(--amber)}
+.wp-genre{font-size:.6rem;text-transform:uppercase;letter-spacing:.2em;color:var(--amber);font-weight:600;margin-bottom:.5rem}
+.wp-card h3{font-family:'Cormorant Garamond',serif;font-size:1.08rem;font-weight:400;margin-bottom:.5rem;line-height:1.35}.wp-card .excerpt{font-size:.82rem;color:rgba(240,236,228,.45);font-weight:300;font-style:italic;line-height:1.7}
+.about-layout{display:grid;grid-template-columns:5fr 3fr;gap:4rem}
+.about-photo{margin-bottom:2rem}.about-photo img{width:100%}
+.about-text p{color:var(--text-muted);font-size:.92rem;margin-bottom:1rem;line-height:1.85;font-weight:300}.about-text p:first-of-type{font-size:1rem;color:var(--text);font-weight:400}
+.cv-sidebar h3{font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-weight:400;margin-bottom:1.5rem}
+.cv-item{margin-bottom:1.3rem;padding-bottom:1.3rem;border-bottom:1px solid var(--dust)}.cv-item:last-of-type{border-bottom:none}
+.cv-item .role{font-weight:500;font-size:.85rem}.cv-item .org{font-size:.79rem;color:var(--shoot)}.cv-item .dates{font-size:.72rem;color:var(--text-light);margin-top:.1rem}
+.contact-section{text-align:center;padding:5rem 2rem;background:var(--sand);background-image:none;position:relative}
+.contact-section p{color:var(--text-muted);font-size:.94rem;max-width:480px;margin:0 auto 2.5rem;line-height:1.75;font-weight:300}
+.contact-links{display:flex;justify-content:center;gap:2.5rem;flex-wrap:wrap}
+.contact-link{display:flex;align-items:center;gap:.5rem;font-size:.84rem;font-weight:500;color:var(--text);transition:color .3s}.contact-link:hover{color:var(--shoot)}.contact-link svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:1.8}
+footer{text-align:center;padding:1.5rem;font-size:.72rem;color:var(--text-light);border-top:1px solid var(--dust);background:var(--cream);background-image:none}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}.reveal.visible{opacity:1;transform:translateY(0)}
+@media(max-width:1000px){.hero-grid{grid-template-columns:1fr;text-align:center}.hero-tagline{margin:0 auto 2rem}.hero-cta{justify-content:center}.hero-photos{max-width:500px;margin:0 auto;order:-1}.work-featured{grid-template-columns:1fr}.work-featured-img{min-height:220px}.work-pair{grid-template-columns:1fr}.about-layout{grid-template-columns:1fr}}
+@media(max-width:768px){nav{padding:.9rem 1.2rem}.nav-links{display:none;position:absolute;top:100%;left:0;right:0;background:var(--cream);border-bottom:1px solid var(--dust);flex-direction:column;padding:1.5rem;gap:1.2rem}.nav-links.open{display:flex}.nav-toggle{display:block}section{padding:3.5rem 1.25rem}.media-grid,.edu-grid,.cert-grid,.writing-grid{grid-template-columns:1fr}.photo-strip{grid-template-columns:1fr}.photo-strip img{height:200px}.community-inner{flex-direction:column;text-align:center}.vine-left,.vine-right,.section-leaf{display:none}}
+</style>
+</head>
+<body>
+
+<!-- SVG VINE DECORATIONS (left edge) -->
+<svg class="vine-left" viewBox="0 0 80 800" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+<path d="M40 0 C38 100,45 150,35 250 C25 350,42 400,38 500 C34 600,44 700,40 800" stroke="#4A6741" stroke-width="1.5" opacity=".12" fill="none"/>
+<g opacity=".08" class="anim-sway"><path d="M35 80 C28 65,15 68,12 78 C9 88,20 95,35 80Z" fill="#4A6741"/></g>
+<g opacity=".06" class="anim-swayR"><path d="M42 180 C50 165,62 170,64 180 C66 190,54 196,42 180Z" fill="#5C7A52"/></g>
+<g opacity=".09" class="anim-sway-slow"><path d="M30 320 C22 305,10 310,8 320 C6 330,18 336,30 320Z" fill="#4A6741"/></g>
+<g opacity=".05" class="anim-drift"><path d="M44 440 C52 425,65 430,66 440 C67 450,55 456,44 440Z" fill="#6B8F5E"/></g>
+<g opacity=".07" class="anim-sway"><path d="M33 580 C25 565,13 568,11 578 C9 588,21 594,33 580Z" fill="#4A6741"/></g>
+<g opacity=".06" class="anim-swayR"><path d="M45 700 C53 685,66 690,67 700 C68 710,56 716,45 700Z" fill="#5C7A52"/></g>
+<path d="M36 130 C30 125,22 130,25 138" stroke="#4A6741" stroke-width=".8" opacity=".06" fill="none"/>
+<path d="M40 380 C46 375,54 380,51 388" stroke="#5C7A52" stroke-width=".8" opacity=".06" fill="none"/>
+</svg>
+<svg class="vine-right" viewBox="0 0 80 800" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+<path d="M40 0 C42 120,36 180,44 280 C52 380,37 430,40 530 C43 630,36 720,40 800" stroke="#4A6741" stroke-width="1.5" opacity=".12" fill="none"/>
+<g opacity=".07" class="anim-swayR"><path d="M45 100 C53 85,65 90,66 100 C67 110,55 116,45 100Z" fill="#4A6741"/></g>
+<g opacity=".06" class="anim-sway"><path d="M32 240 C24 225,12 230,10 240 C8 250,20 256,32 240Z" fill="#5C7A52"/></g>
+<g opacity=".08" class="anim-drift"><path d="M48 400 C56 385,68 390,69 400 C70 410,58 416,48 400Z" fill="#4A6741"/></g>
+<g opacity=".05" class="anim-sway-slow"><path d="M30 560 C22 545,10 550,8 560 C6 570,18 576,30 560Z" fill="#6B8F5E"/></g>
+<g opacity=".07" class="anim-swayR"><path d="M46 720 C54 705,66 710,67 720 C68 730,56 736,46 720Z" fill="#4A6741"/></g>
+</svg>
+
+<nav>
+<a href="#" class="nav-name">Rod Parsley Mwangi</a>
+<button class="nav-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+<ul class="nav-links">
+<li><a href="#work">Work</a></li><li><a href="#media">Media</a></li><li><a href="#education">Education</a></li><li><a href="writing.html">Writing</a></li><li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<!-- HERO: Two photos side by side, text on left -->
+<section class="hero">
+<div class="hero-grid">
+<div class="hero-text">
+<h1>Policy research, governance reform, and <em>2.6 acres in Kajiado.</em></h1>
+<p class="hero-tagline">I work across government, UN agencies, and civil society on the evidence and systems that make inclusion real. I also run a farm. The two have more in common than you'd think.</p>
+<div class="hero-cta">
+<a href="#work" class="btn btn-green">See the work</a>
+<a href="Rod_Parsley_Mwangi_CV.pdf" class="btn btn-outline" download>Download CV</a>
+</div>
+</div>
+<div class="hero-photos">
+<div class="hero-img"><img src="images/rod-presenting.jpg" alt="Rod Parsley Mwangi presenting"><div class="hero-img-caption">Policy validation session</div></div>
+<div class="hero-img"><img src="images/rod-farm.jpg" alt="Rod installing drip irrigation, Kajiado"><div class="hero-img-caption">Drip installation, Kajiado</div></div>
+</div>
+</div>
+</section>
+
+<!-- ABOUT (early, right after hero) -->
+<div class="about-early">
+<svg class="section-leaf anim-drift" style="top:20px;right:8%;opacity:.06" width="40" height="65" viewBox="0 0 40 65" fill="none"><path d="M20 65 C20 65,5 40,8 20 C11 0,29 0,32 20 C35 40,20 65,20 65Z" fill="#4A6741"/><path d="M20 60 L20 8" stroke="#3D5A35" stroke-width=".8" opacity=".5"/></svg>
+<div class="about-early-inner reveal">
+<p class="about-early-text">I'm a Kenyan researcher and development practitioner with a background in <span class="hl">Anthropology</span> and <span class="hl">International Relations</span>, currently preparing for an MA in International Studies at the University of Wyoming. Over the past two years, I've contributed to Kenya's Beijing+30 Country Report, led field research for UN Women on blue economy value chains, helped 18 trade unions build governance frameworks from scratch, and started a commercial farm that produced 8.7 tonnes of onions in its first season. The common thread isn't a sector. It's a habit: I find the gap between how a system is supposed to work and how it actually works, and I build what's missing to close it.</p>
+</div>
+</div>
+
+<!-- WORK / PROJECTS (policy leads, farm later) -->
+<section id="work">
+<svg class="section-leaf anim-sway" style="top:60px;left:4%;opacity:.05" width="30" height="50" viewBox="0 0 30 50" fill="none"><path d="M15 50 C15 50,3 30,5 15 C7 0,23 0,25 15 C27 30,15 50,15 50Z" fill="#5C7A52"/></svg>
+<div class="section-inner">
+<div class="section-label label-green">Selected Work</div>
+<h2 class="section-heading">Things I've built</h2>
+<div class="work-grid">
+
+<div class="work-pair">
+<div class="work-card paper-grain reveal">
+<div class="work-type type-green">Field Research & M&E</div>
+<h3>UN Women Kenya: GBA+ Blue Economy Study</h3>
+<p>Led field coordination and data collection for a Gender-Based Analysis Plus study across Kwale and Lamu counties. 175+ respondents, mixed-methods design, KOBO Toolbox. The study examines how blue economy value chains include and exclude women, youth, and persons with disabilities.</p>
+<div class="work-tags"><span class="tag tag-green">GBA+</span><span class="tag tag-green">KOBO Toolbox</span><span class="tag tag-green">Mixed Methods</span><span class="tag tag-green">SDG 5 & 14</span></div>
+</div>
+<div class="work-card paper-grain reveal">
+<div class="work-type type-green">Policy & Documentary</div>
+<h3>Kenya's Beijing+30 Country Report & Documentary</h3>
+<p>Contributed research and drafting to Kenya's national review of the Beijing Platform for Action, submitted to the UN for the 30th anniversary global review. Scripted and conducted interviews for a documentary on 30 years of gender reform.</p>
+<a href="https://gender.go.ke/sites/default/files/publications/BEJING%2B30%20KENYA%20COUNTRY%20REPORT.pdf" target="_blank" class="work-link link-green">Read the Country Report &#8594;</a>
+</div>
+</div>
+
+<div class="work-pair">
+<div class="work-card paper-grain reveal">
+<div class="work-type type-green">Institutional Reform</div>
+<h3>Union-to-Union: Ethical Governance for 18 Trade Unions</h3>
+<p>Supported 18 Kenyan trade unions in developing Codes of Conduct and SEAH/Anti-Corruption policies from scratch under a global pilot. Drafted model clauses, ensured legal alignment, documented for replication across Sub-Saharan Africa.</p>
+<a href="https://www.linkedin.com/posts/accurat-as_matatu-workers-union-and-kupripupa-union-activity-7345439588317831169-qXsO" target="_blank" class="work-link link-green">See on LinkedIn &#8594;</a>
+<div class="work-tags"><span class="tag tag-green">SEAH Policy</span><span class="tag tag-green">Governance</span><span class="tag tag-green">Legal Alignment</span></div>
+</div>
+<div class="work-card paper-grain reveal">
+<div class="work-type type-green">Technical Support</div>
+<h3>UNIDO: Gender Analysis of Energy Efficiency in Tea</h3>
+<p>Providing research and analytical support for a UNIDO-commissioned gender assessment of the EELA Kenya programme, focused on energy-efficient appliance uptake, clean technology in the tea industry, and skills development.</p>
+<div class="work-tags"><span class="tag tag-green">UNIDO</span><span class="tag tag-green">Gender Analysis</span><span class="tag tag-green">Energy Efficiency</span></div>
+</div>
+</div>
+
+<div class="work-featured paper-grain reveal">
+<div class="work-featured-img" style="background-image:url('images/farm-panorama.jpg')"></div>
+<div class="work-featured-text">
+<div class="work-type type-earth">Agriculture</div>
+<h3>Parsley's Farm: 2.6 Acres in Kajiado</h3>
+<p>Commercial vegetable operation under drip irrigation in semi-arid conditions. Harvested 8.7 tonnes of onions from 1.4 acres in the first season. Featured on Citizen TV's Kenya's Gold. The structural gaps I study professionally show up here as things I navigate every day.</p>
+<div class="work-tags"><span class="tag tag-earth">Drip Irrigation</span><span class="tag tag-earth">Commercial Farming</span><span class="tag tag-earth">Kajiado County</span></div>
+</div>
+</div>
+
+<div class="work-pair">
+<div class="work-card paper-grain reveal">
+<div class="work-type type-earth">Technology</div>
+<h3>AI-Powered HR Guidance Tool</h3>
+<p>Collaborated with a team on an AI chatbot using Google Gemini API for an MBA Social Good Challenge. The tool uses an 83-chunk knowledge base from six organizational HR documents, deployed on Vercel.</p>
+</div>
+<div class="work-card paper-grain reveal">
+<div class="work-type type-earth">Technology</div>
+<h3>Parsley's Farm PWA</h3>
+<p>Building a progressive web app for farm operations: 290+ beds, crop tracking, sales, harvest logging, expense management. Offline-first with IndexedDB and Supabase backend.</p>
+<div class="work-tags"><span class="tag tag-earth">Supabase</span><span class="tag tag-earth">PWA</span><span class="tag tag-earth">Offline-First</span></div>
+</div>
+</div>
+
+</div></div></section>
+
+<div class="photo-strip">
+<img src="images/farm-seedlings.jpg" alt="Onion seedling rows">
+<img src="images/farm-golden.jpg" alt="Farm at golden hour">
+<img src="images/onion-harvest.jpg" alt="Harvested red onions">
+</div>
+
+<section class="media-section" id="media"><div class="section-inner">
+<div class="section-label" style="color:var(--amber)">In the Media</div>
+<h2 class="section-heading">Watch</h2>
+<div class="media-grid">
+<div class="media-card reveal"><a href="https://www.youtube.com/watch?v=0Lt_EJUPY7U" target="_blank" rel="noopener"><div class="media-thumb"><img src="https://img.youtube.com/vi/0Lt_EJUPY7U/hqdefault.jpg" alt="Documentary"><div class="play-btn"><svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div><div class="media-info"><h4>Kenya's Journey Towards Gender Equality</h4><p>Documentary | State Department for Gender</p></div></a></div>
+<div class="media-card reveal"><a href="https://www.youtube.com/watch?v=6YSAXERBwq4" target="_blank" rel="noopener"><div class="media-thumb"><img src="https://img.youtube.com/vi/6YSAXERBwq4/hqdefault.jpg" alt="Kenya's Gold"><div class="play-btn"><svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div><div class="media-info"><h4>Kenya's Gold: Onion Farming</h4><p>Citizen TV</p></div></a></div>
+<div class="media-card reveal"><a href="https://www.youtube.com/watch?v=ht6iGvHWNWI" target="_blank" rel="noopener"><div class="media-thumb"><img src="https://img.youtube.com/vi/ht6iGvHWNWI/hqdefault.jpg" alt="Studio"><div class="play-btn"><svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div><div class="media-info"><h4>Studio Appearance</h4><p>Citizen TV</p></div></a></div>
+</div></div></section>
+
+<section class="bg-sand" id="education"><div class="section-inner">
+<div class="section-label label-green">Education</div>
+<h2 class="section-heading">Where I've studied</h2>
+<div class="edu-grid">
+<div class="edu-card edu-upcoming reveal"><span class="edu-badge">Fall 2026</span><div class="degree">MA in International Studies</div><div class="school">University of Wyoming</div><div class="details">School of Politics, Public Affairs, and International Studies</div></div>
+<div class="edu-card reveal"><div class="degree">BA in International Relations and Diplomacy</div><div class="school">Riara University, Nairobi</div><div class="details">Second Class Honours, Upper Division | 2020 - 2024</div></div>
+<div class="edu-card reveal"><div class="degree">BA in Anthropology</div><div class="school">University of Nairobi</div><div class="details">Second Class Honours, Upper Division | 2017 - 2022</div></div>
+<div class="edu-card reveal"><div class="degree">Diploma in International Studies</div><div class="school">University of Nairobi</div><div class="details">Distinction | 2017 - 2018</div></div>
+</div></div></section>
+
+<section id="recognition">
+<svg class="section-leaf anim-sway-slow" style="top:30px;right:6%;opacity:.05" width="28" height="46" viewBox="0 0 28 46" fill="none"><path d="M14 46 C14 46,3 28,5 13 C7 0,21 0,23 13 C25 28,14 46,14 46Z" fill="#4A6741"/></svg>
+<div class="section-inner">
+<div class="section-label label-earth">Recognition</div>
+<h2 class="section-heading">Awards and leadership</h2>
+<div class="cert-grid">
+<div class="cert-card reveal"><div class="cert-img"><img src="images/cert-best-speaker.jpg" alt="Best Speaker"></div><div class="cert-text"><h4>Best Speaker Award</h4><p>Nairobi Kleve Model African Union, 2022 | Rhine-Waal University</p></div></div>
+<div class="cert-card reveal"><div class="cert-img"><img src="images/cert-electoral.jpg" alt="Electoral Commission"></div><div class="cert-text"><h4>Chairperson, Electoral Commission</h4><p>Riara University, 2024 | Restructured electoral system, introduced digital voting</p></div></div>
+</div></div></section>
+
+<div class="community-bar"><div class="community-inner reveal">
+<div class="community-icon"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+<div class="community-text"><h4>Community Involvement</h4><p>Volunteer with Gospel Outreach Church since 2017, supporting audiovisual production, digital engagement, and community outreach initiatives.</p></div>
+</div></div>
+
+<section class="writing-section" id="writing"><div class="section-inner">
+<div class="section-label" style="color:var(--amber)">Musings, Considerations, and Occasional Convictions</div>
+<h2 class="section-heading">Selected writing</h2>
+<div class="writing-grid">
+<div class="wp-card reveal"><div class="wp-genre">Political Commentary</div><h3>From the Pen of a Cautious Optimist</h3><p class="excerpt">"I find myself among the masses you have wooed..."</p></div>
+<div class="wp-card reveal"><div class="wp-genre">Creative Nonfiction</div><h3>A Trip Home</h3><p class="excerpt">A story of boarding the wrong matatu, told in Sheng, English, and everything in between.</p></div>
+<div class="wp-card reveal"><div class="wp-genre">Poetry</div><h3>Without the Fear of Loss</h3><p class="excerpt">"For I would rather be blessed by hatred divine, than to be cursed by indifference..."</p></div>
+</div>
+<div style="text-align:center"><a href="writing.html" class="btn btn-earth">Read more writing &#8594;</a></div>
+</div></section>
+
+<section id="about"><div class="section-inner">
+<div class="section-label label-green">About</div>
+<h2 class="section-heading">The full picture</h2>
+<div class="about-layout">
+<div class="about-text">
+<div class="about-photo"><img src="images/rod-speaking.jpg" alt="Rod Parsley Mwangi speaking"></div>
+<p>Most of my career so far has been about one thing: taking systems that don't work for people and building what's missing to make them functional.</p>
+<p>Sometimes that looks like research. For UN Women Kenya, I led field coordination and data collection for a GBA+ study across two coastal counties, generating evidence on how blue economy value chains include and exclude women, youth, and persons with disabilities. At the State Department for Gender, I contributed to Kenya's Beijing+30 Country Report, drafted technical submissions for CSW69, and scripted and conducted interviews for a documentary on Kenya's 30-year journey toward gender equality. I've also been providing analytical support for a UNIDO-commissioned gender assessment of energy efficiency in Kenya's tea sector.</p>
+<p>Sometimes it looks like institutional reform. I helped 18 Kenyan trade unions build Codes of Conduct and SEAH policies from scratch under a Union-to-Union global pilot, drafting model clauses, ensuring legal alignment, and documenting the process for replication across Sub-Saharan Africa.</p>
+<p>Sometimes it looks like agriculture. I run Parsley's Farm, a 2.6-acre commercial vegetable operation in Kajiado County where I harvested 8.7 tonnes of onions from 1.4 acres in my first season. Citizen TV featured the harvest on Kenya's Gold.</p>
+<p>And sometimes it looks like something I didn't plan for: redesigning a survey instrument for agricultural workers, building a progressive web app for farm management, collaborating on an AI-powered HR tool for a university challenge. The gap was there, and the skill was learnable.</p>
+<p>This Fall, I join the University of Wyoming for an MA in International Studies. The longer-term aim is to connect field-level evidence with policy design, whether through multilateral institutions, a research career, or building something of my own.</p>
+</div>
+<div class="cv-sidebar">
+<h3>Experience</h3>
+<div class="cv-item"><div class="role">Founder & Manager</div><div class="org">Parsley's Farm, Kajiado County</div><div class="dates">Aug 2025 - Present</div></div>
+<div class="cv-item"><div class="role">Research Assistant</div><div class="org">University of Nairobi</div><div class="dates">Jan 2026 - Mar 2026</div></div>
+<div class="cv-item"><div class="role">Field Coordinator & M&E Lead</div><div class="org">UN Women Kenya</div><div class="dates">Nov 2025 - Dec 2025</div></div>
+<div class="cv-item"><div class="role">Program Assistant</div><div class="org">Tarucca East Africa (Accurat)</div><div class="dates">Jan 2025 - Sep 2025</div></div>
+<div class="cv-item"><div class="role">Policy Intern</div><div class="org">State Department for Gender</div><div class="dates">Jan 2024 - Mar 2025</div></div>
+<div style="margin-top:2rem"><a href="Rod_Parsley_Mwangi_CV.pdf" class="btn btn-outline" download>Download Full CV</a></div>
+</div>
+</div></div></section>
+
+<section class="contact-section" id="contact">
+<svg style="margin:0 auto 1rem;opacity:.12" width="36" height="28" viewBox="0 0 36 28" fill="none"><rect x="1" y="1" width="34" height="26" rx="3" stroke="#8B6F47" stroke-width="1.5" fill="none"/><polyline points="1,1 18,15 35,1" stroke="#8B6F47" stroke-width="1.5" fill="none"/></svg>
+<div class="section-label label-green">Get in Touch</div>
+<h2 class="section-heading">Let's connect</h2>
+<p>Open to conversations about research, policy, agriculture, or whatever falls between them. Currently based in Nairobi. Heading to Laramie, Wyoming this Fall.</p>
+<div class="contact-links">
+<a href="mailto:rodmwangi@gmail.com" class="contact-link"><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22,4 12,13 2,4"/></svg> rodmwangi@gmail.com</a>
+<a href="https://www.linkedin.com/in/rodmwangi" target="_blank" class="contact-link"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg> LinkedIn</a>
+<a href="tel:+254740154181" class="contact-link"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> +254 740 154181</a>
+</div>
+</section>
+
+<footer>&copy; 2026 Rod Parsley Mwangi. Nairobi, Kenya.</footer>
+
+<script>
+var obs=new IntersectionObserver(function(entries){entries.forEach(function(e,i){if(e.isIntersecting){setTimeout(function(){e.target.classList.add('visible')},i*60);obs.unobserve(e.target)}})},{threshold:.08});
+document.querySelectorAll('.reveal').forEach(function(el){obs.observe(el)});
+window.addEventListener('scroll',function(){document.querySelector('nav').classList.toggle('scrolled',window.scrollY>50)});
+document.querySelector('.nav-toggle').addEventListener('click',function(){document.querySelector('.nav-links').classList.toggle('open')});
+document.querySelectorAll('.nav-links a').forEach(function(a){a.addEventListener('click',function(){document.querySelector('.nav-links').classList.remove('open')})});
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+The passage of time,
+Proves to be vain,
+For the memory of love,
+Dies never a slow death,
+Neither should I wish it otherwise,
+For I would rather be blessed by hatred divine,
+Than to be cursed by indifference,
+Verily, as the wounds remain,
+I know that I loved and not without cost,
+For it would be to my shame,
+Had I a love that was fickle,
+Fading slowly to oblivion,
+Nay, mine was a torrid symphony,
+Whose conductor you were
+The echoes of whose crescendo linger still,
+For while I yet loved,
+You deserved nothing less,
+And all I could afford,
+That did I give,
+For that is how I must love
+Without the fear of loss

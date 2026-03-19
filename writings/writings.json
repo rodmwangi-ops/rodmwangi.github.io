@@ -1,0 +1,52 @@
+[
+  {
+    "id": "cautious-optimist",
+    "title": "From the Pen of a Cautious Optimist",
+    "genre": "Political Commentary",
+    "date": "2022",
+    "context": "Originally shared with friends",
+    "excerpt": "I find myself among the masses you have wooed. The masses who the self-proclaimed intellectual superiors seem to be brimming with disdain for...",
+    "file": "cautious-optimist.md",
+    "format": "prose"
+  },
+  {
+    "id": "trip-home",
+    "title": "A Trip Home",
+    "genre": "Creative Nonfiction",
+    "date": "2024",
+    "context": "Originally shared with friends",
+    "excerpt": "A story of boarding the wrong matatu, told in Sheng, English, and everything in between.",
+    "file": "trip-home.md",
+    "format": "prose"
+  },
+  {
+    "id": "without-fear",
+    "title": "Without the Fear of Loss",
+    "genre": "Poetry",
+    "date": "2023",
+    "context": "Originally shared with friends",
+    "excerpt": "For I would rather be blessed by hatred divine, than to be cursed by indifference...",
+    "file": "without-fear.md",
+    "format": "verse"
+  },
+  {
+    "id": "dear-mr-ms-a",
+    "title": "Dear Mr/Ms A",
+    "genre": "Satire",
+    "date": "2023",
+    "context": "Originally shared with friends",
+    "excerpt": "Your persistence in ignorance would have come as a surprise to me had I not been acquainted with you...",
+    "file": "dear-mr-ms-a.md",
+    "format": "prose"
+  },
+  {
+    "id": "china-africa",
+    "title": "China's Non-Interference Principle in Africa",
+    "genre": "Academic Writing Sample",
+    "date": "2026",
+    "context": "MA application writing sample, University of Wyoming",
+    "excerpt": "A policy analysis of the evolution and strategic application of non-interference in Sino-African relations.",
+    "file": "china-africa.md",
+    "format": "prose"
+  }
+]
